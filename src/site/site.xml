@@ -32,6 +32,11 @@
 		<fluidoSkin>
 			<googleSearch />
 			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+			<gitHub>
+				<projectId>dattack/junit-extensions</projectId>
+				<ribbonOrientation>right</ribbonOrientation>
+				<ribbonColor>black</ribbonColor>
+			</gitHub>
 		</fluidoSkin>
 	</custom>
 
