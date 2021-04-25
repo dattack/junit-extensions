@@ -34,14 +34,8 @@ jobs:
       - name: Release Maven package
         uses: samuelmeuli/action-maven-publish@v1
         with:
+          maven_profiles: sign,build-extras
           gpg_private_key: ${{ secrets.OSSRH_GPG_SECRET_KEY }}
           gpg_passphrase: ${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD  }}
           nexus_username: ${{ secrets.OSSRH_USERNAME }}
           nexus_password: ${{ secrets.OSSRH_PASSWORD }}
-#
-#      - name: Publish to the Maven Central Repository
-#        run: mvn -e --update-snapshots -P sign,build-extras clean deploy
-#        env:
-#          MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-#          MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
-#
