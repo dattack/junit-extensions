@@ -1,0 +1,32 @@
+language: java
+jdk:
+- openjdk8
+dist: bionic
+notifications:
+  email:
+    recipients:
+    - dev@dattack.com
+    on_success: always
+    on_failure: always
+cache:
+  directories:
+  - "~/.m2/repository"
+env:
+  global:
+  - secure: qmS38srS35x/H6eyVY606OShBe9kayq46kBmjxzzuYQratvt4okRFPZX0S0HWS277wzxnrGEutlTbsKQC/8MVvpYXIuoookeBhAaI/oZpcXPnn+djbxM2nL9u8vI+ou+XXCdVhCY94tTPDAajL71jK8L+N0cmaFt7q6lDIhIm8j4Ifeah5THWuJBI+eNSsOnpRDh813BBZ1wAoPzXp64qYSiViIujYm6ZNl6FZklRw3U3aZ8c53rASAGopxzUa8Ca5kFTjwdA0zfQjgJVZpYO3Ufw20CfzMdCTq3CprTGOTsdl/i+92MzA8xs451mkmoyvZgGef+87KtOFoGyhivfo+wXDaElM2jpxWVd1V23r9Z1psDEbvzZdc6+JtDu+DtQZ3fEjGQxvNNEQ/TWc/drwXXeWLkSeZpGiVfUbw/WWTWx3iRmVyf3iJG54IZFGiqCxijrERrpJtjN9u61daBmG4MrNxb6vhKFlF0DiajWYzGzDcqEt6H0lNGf1YSuO7HC4i95g3n8mKEcjRXDfbE12vLARkLCNlaU1rCcEYK29PmWqvb2f1mglNTiJBFICBtOEhLHM8Qp0+7hSc5awPdu8FbOXc4Ll6q9rw25L5064R+/93BQnrayub7wG9XdlK3UrUt/TmjZ22FhkN/SAoYfql2vXo6R1Uzm3iufNvIDjM=
+  - secure: SeIWnzd6sQfwsHYMKR/UVm6xpOK0atvTg4degk0tPepG5HKkgXNZL8DSe5oXFoJON+4f9eXCLu6cr7LtThGQ0i4iV7+UVWhsnWp+5AvirS7y5bNTXLDnxHdX8WQfxZGzDpjmxYDU6DSVE+zVHai8crkHqhmTMbegh5TK+N9xUHi21lZDR1DKhS75lVNvzbLvTRmbVhi0C54uHfxJqs5uDghbJlS4J6lWh7vWtglD8G4g42bCiaL/AIbhZzVIV4HmflUAL1KXof8n/tvIDpVC8uREzK7YNjkk2q5yPD6arG0LCuU9gmtpwqZPAwqXYmD2N4Q20W5sjz9JfS45TbvWebvfqhzNHRi3xbuRAteuglC4rXp0RHqU/PD7LfFygJ1u5Cq+tCWIpVrgStojPRboV613RNMCLdc96jao3iTr6QTKrJBBLiOtQUSxylUMvjn5vFsvtF835RD97QGfvD3w6waMdyTHdfcZKWxFxu35D/AyGdrpJXMIG66vWEqGekgDV0rNFbyl/zm4/y8SFpmCu7LLxaY+ACi/hCRX4IRcOwJpcUsfE9ckDsC3DvWB70sma68jRgyWqTOKOoYmIrB8AKtPzUta3VrBJXAVF/kDCjsvjrZrA8YJVigVfmNXR6qlSXRmOvwm4CUwJDzNtvi2rcb5Sq9kMP3/OErKlEUIwGE=
+  - secure: o7b28iwcCOK6X7KIvlXS5ZHfuDgnhu1MScx+1ieppGdZ2+xuaOG+QUyDrh6jIEJYoHPMBCdL6dn4Pr1Vg7F8FN2B1dhwv0OjUimK65gyQ2GsDyOks6f9go/6BU7pBRMPrillt9DuucPYQ3cnaeGne9oSydERXyUXIxIYocYjEcFh0hKHIBBD/xvS7wDKoqG+ZwRkAdgx2CUi6PTBit1g3U2u9DktUD6GcqzTSV7bHHHtjaOngPhXBjvHgHhCAmM04QXoZDi2DVdYNiOeTbfZ/OAIw738xDSUEigrGZa1HF0XjOz9fR5aVKEwEIVKoI3jNM3cD54GkQob7OoQ+OOmp4bbM25+lSDT3oi+42demydOYHXcao5M4UpcJc4FL5KwLDx7DsSa/dUAzBz8sXuDbKlHnknCAZkoZ4VpsUBdttrEPqKyXGi0UPhubvS4fKC0GOtkI5+FuS+Y4N6Je4VKGVSCZB3Ked6/O+kFOe3NUbbdSDsCSSFvUxTxOZ4msfbpZxJ43DdnSdk3UY8u6IeqvtleahM+3xQO5/tT0OhMiZSNLXwaXR1FIvt9PL2vDddKySPvWVEOFxF/rTWOzjx8N7C4cvBRHTWWD1N+nI/rPe7uXRoPWvgoIYPHk3j48sKt1DqLc7CPuulTLbpMcwWDfZV+sHil+Jw/juHXjMkjZWg=
+  - secure: ThN90ZV2gu7FhOOJlVwJhmUxtz2AQsG4alv8X9rgsiDv6fCrERCeu/UfQb7zWxVXTW0NN6RdteBcX+dsKvkrlf0N0vV9jlslBd0Jqj8wa6YO93haxQjehS3bWF//EgWOI9yeyVhuC+iYs+YOMavxXWyx4TZcyAglja+bxm9bDe1HGXC1w4EIG2byIU4284RLaklRy89UtThuDTLFVGrUVNsOaSVTnNYnj/URoxTX8DwhGZxCc1Le6ov2QkgsK4PXoq9pB+zohsl5iG0D28RP3S+vGANIMcvmCrTTI23tWLDQgGdShmAhdV6JQnAFFlBcJH1BZ7H3W3PDlDBwyiEXGo5Rb/7MrhEDB0LXHuUX6HPo8xANzUT3nNGJK4FWSzk8KfH2KOxuRLakR0+H5X7HdqN1It0slFBnl6IUWN23FJBuwFeJXCdJuzR0DJlhaANBLJEMmP+RRfrgqJlOi98fnD/bYBdZ17MBnKyGLh3xr7xd/6z+r5R7n/zlcbKd0nzq+01AF3d5VK9284895QFD6Hf7XSR7MoNUzetnJ1rKvnwWZtXz0K6qTwkQsza40bShJt/iRlT7j/mCRNcbw/9D/G0mWl/PzcTf0qSrSoQE8rPpbEGbeUkEAu0fCHdxnuJYP5Ju2xn652MfLKh20Gc82dkgrjYNwAh3uvCcAP+SjM4=
+install: mvn -P !build-extras install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn -P !build-extras test -B
+before_install:
+- openssl aes-256-cbc -K $encrypted_711e5bbf5b76_key -iv $encrypted_711e5bbf5b76_iv
+  -in .travis/codesigning.asc.enc -out .travis/codesigning.asc -d
+- gpg --batch --fast-import .travis/codesigning.asc
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: mvn -P sign,build-extras -s .travis/settings.xml deploy -DskipTests
+  on:
+    all_branches: true
+    condition: "$TRAVIS_BRANCH =~ ^(master|develop)$"
