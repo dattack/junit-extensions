@@ -1,19 +1,24 @@
-# Parent POM
+# junit-extensions
 
+[![Travis Badge](https://api.travis-ci.com/dattack/junit-extensions.svg?branch=develop)](https://travis-ci.com/dattack/junit-extensions/builds)
 [![license](https://img.shields.io/:license-Apache-blue.svg?style=plastic-square)](LICENSE.md)
+[![Maven Central](https://img.shields.io/maven-central/v/com.dattack/junit-extensions.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.dattack/junit-extensions)
+[![javadoc](https://javadoc.io/badge2/com.dattack/junit-extensions/javadoc.svg)](https://javadoc.io/doc/com.dattack/junit-extensions)
 
 _junit-extensions_ provides a set of utility classes that extends functionally of JUnit and simplify coding of new
 tests.
 
-_junit-extensions_ is hosted into The Central Repository, so all you need to do to use it in a maven project is
-set the parent:
+## Usage
+
+_junit-extensions_ is hosted into The Central Repository, so all you need to do to use it in a Maven project is to
+add as a dependency:
 
 ```xml
-<parent>
+<dependency>
     <groupId>com.dattack</groupId>
     <artifactId>junit-extensions</artifactId>
-    <version>${dattack.junit-extensions.version}</version>
-</parent>
+    <version>0.1</version>
+</dependency>
 ```
 
 ## Contributing
