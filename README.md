@@ -8,10 +8,9 @@
 _junit-extensions_ provides a set of utility classes that extends functionally of JUnit and simplify coding of new
 tests.
 
-## Usage
+## Where can I get the latest release?
 
-_junit-extensions_ is hosted into The Central Repository, so all you need to do to use it in a Maven project is to
-add as a dependency:
+You can pull it from the central Maven repositories:
 
 ```xml
 <dependency>
