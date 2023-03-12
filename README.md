@@ -1,22 +1,22 @@
-# junit-extensions
-
-[![Travis Badge](https://api.travis-ci.com/dattack/junit-extensions.svg?branch=develop)](https://travis-ci.com/dattack/junit-extensions/builds)
+![Build](https://github.com/dattack/junit-extensions/actions/workflows/maven-deploy.yml/badge.svg?branch=dev)
 [![license](https://img.shields.io/:license-Apache-blue.svg?style=plastic-square)](LICENSE.md)
 [![Maven Central](https://img.shields.io/maven-central/v/com.dattack/junit-extensions.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.dattack/junit-extensions)
 [![javadoc](https://javadoc.io/badge2/com.dattack/junit-extensions/javadoc.svg)](https://javadoc.io/doc/com.dattack/junit-extensions)
+
+# junit-extensions
 
 _junit-extensions_ provides a set of utility classes that extends functionally of JUnit and simplify coding of new
 tests.
 
 ## Where can I get the latest release?
 
-You can pull it from the central Maven repositories:
+You can pull it from the Central Maven repositories:
 
 ```xml
 <dependency>
     <groupId>com.dattack</groupId>
     <artifactId>junit-extensions</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
 </dependency>
 ```
 
