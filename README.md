@@ -1,4 +1,4 @@
-![Build](https://github.com/dattack/junit-extensions/actions/workflows/maven-deploy.yml/badge.svg?branch=dev)
+[![Build](https://github.com/dattack/junit-extensions/actions/workflows/maven-deploy.yml/badge.svg?branch=dev)](https://github.com/dattack/junit-extensions/actions)
 [![license](https://img.shields.io/:license-Apache-blue.svg?style=plastic-square)](LICENSE.md)
 [![Maven Central](https://img.shields.io/maven-central/v/com.dattack/junit-extensions.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.dattack/junit-extensions)
 [![javadoc](https://javadoc.io/badge2/com.dattack/junit-extensions/javadoc.svg)](https://javadoc.io/doc/com.dattack/junit-extensions)
