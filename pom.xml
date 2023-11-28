@@ -20,7 +20,7 @@
         <version>8</version>
     </parent>
     <artifactId>junit-extensions</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
     <name>junit-extensions</name>
     <description>JUnit extensions</description>
     <url>http://www.dattack.com</url>

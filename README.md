@@ -16,7 +16,7 @@ You can pull it from the Central Maven repositories:
 <dependency>
     <groupId>com.dattack</groupId>
     <artifactId>junit-extensions</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
 </dependency>
 ```
 
