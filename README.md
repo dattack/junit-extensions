@@ -1,20 +1,28 @@
-# Parent POM
-
+[![Build](https://github.com/dattack/junit-extensions/actions/workflows/maven-deploy.yml/badge.svg?branch=dev)](https://github.com/dattack/junit-extensions/actions)
 [![license](https://img.shields.io/:license-Apache-blue.svg?style=plastic-square)](LICENSE.md)
+[![Maven Central](https://img.shields.io/maven-central/v/com.dattack/junit-extensions.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.dattack/junit-extensions)
+[![javadoc](https://javadoc.io/badge2/com.dattack/junit-extensions/javadoc.svg)](https://javadoc.io/doc/com.dattack/junit-extensions)
+
+# junit-extensions
 
 _junit-extensions_ provides a set of utility classes that extends functionally of JUnit and simplify coding of new
 tests.
 
-_junit-extensions_ is hosted into The Central Repository, so all you need to do to use it in a maven project is
-set the parent:
+## Where can I get the latest release?
+
+You can pull it from the Central Maven repositories:
 
 ```xml
-<parent>
+<dependency>
     <groupId>com.dattack</groupId>
     <artifactId>junit-extensions</artifactId>
-    <version>${dattack.junit-extensions.version}</version>
-</parent>
+    <version>0.2</version>
+</dependency>
 ```
+
+The source code on the master branch is the current state of development; it is not
+recommended for general use. If you prefer to build from source, please use an appropriate
+release tag.
 
 ## Contributing
 
@@ -26,6 +34,9 @@ requests, [please create an issue](https://github.com/dattack/junit-extensions/i
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+If you have other questions, please contact by [email](mailto:dev@dattack.com) or
+[@dattackteam](https://twitter.com/dattackteam)
 
 ## License
 

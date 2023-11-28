@@ -17,10 +17,10 @@
     <parent>
         <groupId>com.dattack</groupId>
         <artifactId>parent</artifactId>
-        <version>4</version>
+        <version>8</version>
     </parent>
     <artifactId>junit-extensions</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <name>junit-extensions</name>
     <description>JUnit extensions</description>
     <url>http://www.dattack.com</url>
@@ -63,14 +63,8 @@
         <system>GitHub</system>
         <url>https://github.com/dattack/junit-extensions/actions</url>
     </ciManagement>
-    <distributionManagement>
-        <site>
-            <id>github</id>
-            <url>gitsite:git@https://github.com/dattack/junit-extensions.git</url>
-        </site>
-    </distributionManagement>
     <properties>
-        <junit.version>5.7.1</junit.version>
+        <junit.version>5.10.1</junit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -80,4 +74,26 @@
             <version>${junit.version}</version>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>ossrh-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>ossrh-releases</id>
+            <url>https://oss.sonatype.org/content/repositories/releases/</url>
+        </repository>
+    </repositories>
 </project>

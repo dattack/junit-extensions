@@ -30,35 +30,64 @@ public class AssertionsExt extends org.junit.jupiter.api.Assertions {
         super();
     }
 
+    /**
+     * Checks that a text string is contained within another string.
+     * Validation is case-sensitive.
+     *
+     * @param text      The text string to search on
+     * @param substring The text string to search for
+     */
     public static void assertContains(final String text, final String substring) {
-        assertContains(text, substring, false);
+        doAssertContains(text, substring, false);
     }
 
-    private static void assertContains(final String text, final String substring, final boolean ignoreCase) {
+    /**
+     * Checks that a text string is contained within another string.
+     * Validation is not case-sensitive.
+     *
+     * @param text      The text string to search on
+     * @param substring The text string to search for
+     */
+    public static void assertContainsIgnoreCase(final String text, final String substring) {
+        doAssertContains(text, substring, true);
+    }
+
+    private static void doAssertContains(final String text, final String substring, final boolean ignoreCase) {
         assertTrue(checkContains(text, substring, ignoreCase),
-                String.format("'%s' doesn't contains the substring '%s'", text, substring));
+                   String.format("'%s' doesn't contains the substring '%s'", text, substring));
     }
 
     private static boolean checkContains(final String text, final String substring, final boolean ignoreCase) {
         assertTrue(Objects.nonNull(text), "The text to be searched can't be null");
         assertTrue(Objects.nonNull(substring), "The substring to searching for can't be null");
-        return ignoreCase ? Pattern.compile(Pattern.quote(substring), Pattern.CASE_INSENSITIVE).matcher(text).find()
-                : text.contains(substring);
+        return ignoreCase //
+            ? Pattern.compile(Pattern.quote(substring), Pattern.CASE_INSENSITIVE).matcher(text).find() //
+            : text.contains(substring);
     }
 
-    public static void assertContainsIgnoreCase(final String text, final String substring) {
-        assertContains(text, substring, true);
-    }
-
+    /**
+     * Checks that a text string is not contained within another string.
+     * Validation is case-sensitive.
+     *
+     * @param text      The text string to search on
+     * @param substring The text string to search for
+     */
     public static void assertNotContains(final String text, final String substring) {
         assertNotContains(text, substring, false);
     }
 
     private static void assertNotContains(final String text, final String substring, final boolean ignoreCase) {
         assertFalse(checkContains(text, substring, ignoreCase),
-                String.format("'%s' contains the substring '%s'", text, substring));
+                    String.format("'%s' contains the substring '%s'", text, substring));
     }
 
+    /**
+     * Checks that a text string is not contained within another string.
+     * Validation is case-sensitive.
+     *
+     * @param text      The text string to search on
+     * @param substring The text string to search for
+     */
     public static void assertNotContainsIgnoreCase(final String text, final String substring) {
         assertNotContains(text, substring, true);
     }
